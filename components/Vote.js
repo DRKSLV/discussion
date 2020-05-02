@@ -22,10 +22,10 @@ export function Vote(props) {
     }
 
     return (
-        <div className="vote wrapper">
-            <UpIcon className="vote up" onClick={() => click(1)} width="2rem" height="2rem"></UpIcon>
+        <div>
+            <UpIcon onClick={() => click(1)} width="2rem" height="2rem"></UpIcon>
             <span>{voteCount}</span> 
-            <DownIcon className="vote down" onClick={() => click(-1)} width="2rem" height="2rem"></DownIcon>
+            <DownIcon onClick={() => click(-1)} width="2rem" height="2rem"></DownIcon>
         </div>
     );
 }
