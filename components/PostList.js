@@ -1,4 +1,5 @@
 import { usePostIds, usePosts } from "../hooks/posts";
+import { Post } from "./Post";
 
 export function PostList(props) {
     var postIds = usePostIds();
@@ -6,14 +7,12 @@ export function PostList(props) {
 
     var postObjects = posts.map((post) => {
         var str = JSON.stringify(post, null, 4);
-        return (<li key={post.entity.id}>{str}</li>)
+        return (<Post key={post.entity.id} post={post}></Post>)
     });
 
     return (
         <div style={{whiteSpace: "pre"}}>
-            <ul>
-                {postObjects}
-            </ul>
+            {postObjects}
         </div>
     );
 }

@@ -1,0 +1,31 @@
+import {useState, useEffect} from 'react';
+import axios from "axios";
+
+import UpIcon from "../res/img/upvote5.svg";
+import DownIcon from "../res/img/downvote5.svg";
+
+export function Vote(props) {
+    //Props
+    var votes = props.votes;
+    var voteCount = votes[0] ? ((votes[0].upvotes || 0) - (votes[0].downvotes || 0)) : 0
+
+    //Hooks
+    const [vote, setVote] = useState(0);
+
+    //Api
+    useEffect(() => {
+    }, [vote]);
+
+    //events
+    function click(val) {
+        setVote(val);
+    }
+
+    return (
+        <div className="vote wrapper">
+            <UpIcon className="vote up" onClick={() => click(1)} width="2rem" height="2rem"></UpIcon>
+            <span>{voteCount}</span> 
+            <DownIcon className="vote down" onClick={() => click(-1)} width="2rem" height="2rem"></DownIcon>
+        </div>
+    );
+}
