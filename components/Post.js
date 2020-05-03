@@ -12,7 +12,10 @@ export function Post(props) {
             <Vote votes={p.entity.votes}></Vote>
             <div className={style.content}>
                 <div>
-                    <CommentIcon className={style.comments}/> 
+                    <div className={style.comments}>
+                        {(p.entity.comment.rgt-p.entity.comment.lft-1)/2}
+                        <CommentIcon/>
+                    </div>
                     <p>
                         <b>{p.title}</b><br/>
                         <span className={style.author}>posted by {p.author.username}</span>
