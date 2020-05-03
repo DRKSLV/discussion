@@ -3,7 +3,6 @@ import { Vote } from "./Vote";
 import { Timestamp } from "./Timestamp"
 
 import style from "../style/post.module.sass";
-console.log(style);
 
 export function Post(props) {
     var p = props.post;

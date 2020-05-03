@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import { Header } from '../components/layout/Header';
+import { Container } from '../components/layout/Container';
 import { PostList } from '../components/PostList';
 
 
@@ -8,12 +9,13 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>HelELo</title>
+                <title>Huansohn</title>
             </Head>
+
             <Header></Header>
-            <div>
+            <Container>
                 <PostList></PostList>
-            </div>
+            </Container>
         </div>
     )
 }
