@@ -47,6 +47,14 @@
     & > svg
         width: 25px
         height: 25px
+        transition: all 250ms ease-in-out
+
+        &:hover:first-child
+            transform: translateY(-.5rem)
+
+        &:hover:last-child
+            transform: translateY(.5rem)
+            
 
         &::selection 
             background-color: rgba(0, 255, 255, 0)

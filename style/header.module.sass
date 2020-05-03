@@ -1,14 +1,33 @@
 .header
-    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 2
+    width: calc(100% - 2rem)
     height: 50px
+
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+
+    background-color: var(--header-solid, #262626) //var(--header-solid, #535353)
+    color: #ffffff
+    
+    margin-bottom: 20px
+    padding: 0 1rem
+
+.headerButton
+    border-radius: 50%
+    background-color: #535353
+    width: 40px
+    height: 40px
+
     display: flex
     align-items: center
     justify-content: center
 
-    background-color: var(--header-solid, #535353) //var(--header-solid, #262626);
-    color: #ffffff
-    margin-bottom: 20px
-    position: fixed
-    top: 0
-    z-index: 2
-    font-weight: bolder 
+    transition: all 250ms ease-in-out
+
+.headerButton:hover
+    filter: brightness(120%)
