@@ -13,6 +13,8 @@ export default function Home() {
             </Head>
 
             <Header>
+                <HeaderButton icon={"➕"}></HeaderButton>
+                <HeaderButton icon={"👤"}></HeaderButton>
                 <HeaderButton icon={"⚙"}></HeaderButton>
             </Header>
             <Container>

@@ -1,4 +1,5 @@
 import style from "../../style/header.module.sass";
+import EyeOfJudgement from "../../res/img/eyeOfJudgementEllipse.svg"
 
 export function HeaderButton(props) {
     return (
@@ -11,7 +12,12 @@ export function HeaderButton(props) {
 export function Header(props) {
     return (
         <nav className={style.header}>
-            {props.children}
+            <div className={style.logo}>
+                <EyeOfJudgement/>
+            </div>
+            <div className={style.headerTray}>
+                {props.children}
+            </div>
         </nav>
     );
 }
