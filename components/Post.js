@@ -5,13 +5,25 @@ import { Timestamp } from "./Timestamp"
 import style from "../style/post.module.sass";
 import { useState } from "react";
 
+import { useCommentIds, useComments } from "../hooks/comments";
+import { Comment } from "./Comment";
+
+
 export function Post(props) {
     var p = props.post;
-    var [commentsOpen, setCommentsOpen] = useState(false)
+
+    //load comments
+    var [commentsOpen, setCommentsOpen] = useState(false);
+    var comIds = useCommentIds(commentsOpen, p.entity.id);
+    var comments = useComments(comIds);
+
+    var comObjects = comments.map((comment) => {
+        return (<Comment key={post.entity.id} comment={comment}/>)
+    });
 
     return (
         <>
-            <div className={style.post}>
+            <div className={style.post} onClick={()=>setCommentsOpen(!commentsOpen)}>
                 <Vote votes={p.entity.votes}></Vote>
                 <div className={style.content}>
                     <div>
@@ -26,7 +38,7 @@ export function Post(props) {
                         
                     </div>
                     <div className={style.body}>
-                        <p style={{"whiteSpace":"pre-wrap"}}>
+                        <p>
                             {p.text}
                         </p>
                     </div>
@@ -38,7 +50,7 @@ export function Post(props) {
             {
                 commentsOpen && 
                 <div>
-
+                    {comObjects}
                 </div>
             }
         </>
