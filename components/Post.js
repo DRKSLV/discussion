@@ -2,20 +2,25 @@ import CommentIcon from "../res/img/commentIcon.svg"
 import { Vote } from "./Vote";
 import { Timestamp } from "./Timestamp"
 
+import style from "../style/post.module.sass";
+console.log(style);
+
 export function Post(props) {
     var p = props.post;
 
     return (
-        <div>
+        <div className={style.post}>
             <Vote votes={p.entity.votes}></Vote>
-            <div>
+            <div className={style.content}>
                 <div>
-                    <CommentIcon className="comments" width="2rem" height="2rem"/>
-                    <b>{p.title}</b>
-                    <br/>
-                    <span>posted by {p.author.username}</span> 
+                    <CommentIcon className={style.comments}/> 
+                    <p>
+                        <b>{p.title}</b><br/>
+                        <span className={style.author}>posted by {p.author.username}</span>
+                    </p>
+                    
                 </div>
-                <div>
+                <div className={style.body}>
                     <p style={{"whiteSpace":"pre-wrap"}}>
                         {p.text}
                     </p>

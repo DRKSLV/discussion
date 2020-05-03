@@ -1,6 +1,8 @@
 import { usePostIds, usePosts } from "../hooks/posts";
 import { Post } from "./Post";
 
+import style from "../style/post.module.sass";
+
 export function PostList(props) {
     var postIds = usePostIds();
     var posts = usePosts(postIds);
@@ -11,7 +13,7 @@ export function PostList(props) {
     });
 
     return (
-        <div style={{whiteSpace: "pre"}}>
+        <div className={style.postList}>
             {postObjects}
         </div>
     );

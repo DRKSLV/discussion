@@ -1,0 +1,67 @@
+@use "./style.module" as card
+
+.post 
+    @extend .card
+
+    .content
+        flex: 1
+        position: relative
+        font-size: 1.5rem
+
+        .body
+            font-size: 1rem
+
+        p 
+            margin: 0rem
+
+        .author 
+            color: #888
+            display: block
+            margin-top: 0rem
+            margin-bottom: .75rem
+            font-size: .75rem
+
+        .comments
+            float: right
+            padding: 10px
+            margin-right: 5px
+
+            width: 25px
+            height: 25px
+        
+
+.postList
+    display: grid
+    gap: 1em
+    padding: 0% 10%
+
+.vote
+    position: relative
+    left: 0
+    top: 0
+
+    display: flex
+    flex-flow: column
+    align-items: center
+
+    font-size: 1rem
+    color: #888
+
+    margin: 20px
+
+    & > svg
+        width: 25px
+        height: 25px
+
+        &::selection 
+            background-color: rgba(0, 255, 255, 0)
+
+.timestamp
+    color: #888
+    margin-top: 0rem
+    font-size: .75rem
+
+@media screen and (max-width: 600px) 
+.postList
+    padding: 0% 1.5%
+  

@@ -4,6 +4,8 @@ import axios from "axios";
 import UpIcon from "../res/img/upvote5.svg";
 import DownIcon from "../res/img/downvote5.svg";
 
+import style from "../style/post.module.sass";
+
 export function Vote(props) {
     //Props
     var votes = props.votes;
@@ -22,10 +24,10 @@ export function Vote(props) {
     }
 
     return (
-        <div>
-            <UpIcon onClick={() => click(1)} width="2rem" height="2rem"></UpIcon>
+        <div className={style.vote}>
+            <UpIcon onClick={() => click(1)}></UpIcon>
             <span>{voteCount}</span> 
-            <DownIcon onClick={() => click(-1)} width="2rem" height="2rem"></DownIcon>
+            <DownIcon onClick={() => click(-1)}></DownIcon>
         </div>
     );
 }
