@@ -8,6 +8,8 @@ export function Timestamp(props) {
     var edited = editTime && !editTime.isSame(time);
 
     return (
-        <span className={style.timestamp}>created {time.fromNow()} {edited && "－ edited "+editTime.fromNow()}</span>
+        props.compact ? 
+    <span className={style.timestamp}>{time.fromNow()} {edited && "(edited)"}</span>
+        : <span className={style.timestamp}>created {time.fromNow()} {edited && "－ edited "+editTime.fromNow()}</span>
     );
 }

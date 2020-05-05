@@ -16,20 +16,20 @@ export function usePostIds() {
     return posts
 }
 
-export function usePosts(posts) {
+export function usePosts(ids) {
     var [postArray, setPostArray] = useState([]);
 
     useEffect(() => {
-        posts.forEach((post) => {
+        var promises = ids.map((id) => {
             //FEtch
-            Axios.get(apiUrl+"/post/"+post)
-            .then((res) => {
-                setPostArray((e) => [...e, res.data]);
-            })
-            .catch();
+            return Axios.get(apiUrl+"/post/"+id)
         })
-        
-    }, [posts]) 
+        Promise.all(promises)
+        .then((e) => {
+            setPostArray(e.map((res)=>res.data));
+        })
+        .catch();             
+    }, [ids]) 
 
     return postArray
 }

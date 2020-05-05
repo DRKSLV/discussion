@@ -13,7 +13,7 @@ export function useCommentIds(load, entityId) {
             })
             .catch();
         }
-    }, [load]) 
+    }, [load, entityId]) 
 
     return comments
 }
@@ -22,15 +22,15 @@ export function useComments(ids) {
     var [commentArray, setCommentArray] = useState([]);
 
     useEffect(() => {
-        ids.forEach((id) => {
+        var promises = ids.map((id) => {
             //FEtch
-            Axios.get(apiUrl+"/comment/"+id)
-            .then((res) => {
-                setCommentArray((e) => [...e, res.data]);
-            })
-            .catch();
+            return Axios.get(apiUrl+"/comment/"+id)
         })
-        
+        Promise.all(promises)
+        .then((e) => {
+            setCommentArray(e.map((res)=>res.data).filter((lol) => lol.level>0));
+        })
+        .catch();      
     }, [ids]) 
 
     return commentArray

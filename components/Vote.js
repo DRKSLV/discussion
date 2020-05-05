@@ -4,7 +4,9 @@ import axios from "axios";
 import UpIcon from "../res/img/upvote5.svg";
 import DownIcon from "../res/img/downvote5.svg";
 
-import style from "../style/post.module.sass";
+import { Threadindent } from "./threadindent"
+
+import s from "../style/post.module.sass";
 
 export function Vote(props) {
     //Props
@@ -24,10 +26,11 @@ export function Vote(props) {
     }
 
     return (
-        <div className={style.vote}>
+        <div className={props.small?s.voteSmall:s.vote}>
             <UpIcon onClick={() => click(1)}></UpIcon>
             <span>{voteCount}</span> 
             <DownIcon onClick={() => click(-1)}></DownIcon>
+            {props.small && <Threadindent/>}
         </div>
     );
 }

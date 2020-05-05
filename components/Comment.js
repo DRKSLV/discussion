@@ -1,20 +1,34 @@
+import { Vote } from "./Vote";
+import { Timestamp } from "./Timestamp"
+import { Threadindent } from "./threadindent"
+
+import s from "../style/post.module.sass";
+
 export function Comment(props) {
+    var c = props.comment;
+
+    var indents = [];
+    for(let i=0; i<c.level; i++) {
+        indents.push(<Threadindent/>)
+    }
+
+
     return (
-        <div>
-            <Vote votes={p.entity.votes}></Vote>
-            <div>
-                <div>
-                    <p>
-                        <span className={style.author}>posted by {p.author.username}</span>
-                    </p>
-                </div>
-                <div>
-                    <p style={{"whiteSpace":"pre-wrap"}}>
-                        {p.text}
-                    </p>
-                </div>
-                <div>
-                    <Timestamp time={p.createdAt} edit={p.updatedAt}></Timestamp>
+        <div className={s.commentWrap}>
+            <div className={s.indents}>{indents}</div>
+            <div className={s.comment}>
+                <Vote votes={c.entity.votes} small={true}></Vote>
+                <div className={s.content}>
+                    <div>
+                        <p className={s.author}>
+                            posted by <span>{c.author ? c.author.username : "❌DELETED❌"}</span> <b>·</b> <Timestamp time={c.createdAt} edit={c.updatedAt} compact={true}></Timestamp>
+                        </p>
+                    </div>
+                    <div className={s.body}>
+                        <p>
+                            {c.text}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
