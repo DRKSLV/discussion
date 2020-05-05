@@ -17,7 +17,10 @@ export function Comment(props) {
         <div className={s.commentWrap}>
             <div className={s.indents}>{indents}</div>
             <div className={s.comment}>
-                <Vote votes={c.entity.votes} small={true}></Vote>
+                <div>
+                    <Vote votes={c.entity.votes} small={true}></Vote>
+                    <Threadindent></Threadindent>
+                </div>
                 <div className={s.content}>
                     <div>
                         <p className={s.author}>

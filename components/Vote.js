@@ -30,7 +30,6 @@ export function Vote(props) {
             <UpIcon onClick={() => click(1)}></UpIcon>
             <span>{voteCount}</span> 
             <DownIcon onClick={() => click(-1)}></DownIcon>
-            {props.small && <Threadindent/>}
         </div>
     );
 }
