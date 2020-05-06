@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import CommentIcon from "../res/img/commentIcon.svg"
+import CommentIcon from "../res/svg/commentIcon.svg"
 import { Vote } from "./Vote";
 import { Timestamp } from "./Timestamp"
 

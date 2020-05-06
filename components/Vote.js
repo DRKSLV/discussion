@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
 import axios from "axios";
 
-import UpIcon from "../res/img/upvote5.svg";
-import DownIcon from "../res/img/downvote5.svg";
+import UpIcon from "../res/svg/upvote5.svg";
+import DownIcon from "../res/svg/downvote5.svg";
 
 import { Threadindent } from "./threadindent"
 
@@ -28,7 +28,7 @@ export function Vote(props) {
     return (
         <div className={props.small?s.voteSmall:s.vote}>
             <UpIcon onClick={() => click(1)}></UpIcon>
-            <span>{voteCount}</span> 
+            <div><span>{voteCount}</span></div>
             <DownIcon onClick={() => click(-1)}></DownIcon>
         </div>
     );

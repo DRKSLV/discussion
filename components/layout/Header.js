@@ -1,5 +1,5 @@
 import style from "../../style/header.module.sass";
-import EyeOfJudgement from "../../res/img/eyeOfJudgementEllipse.svg"
+import EyeOfJudgement from "../../res/svg/eyeOfJudgementEllipse.svg"
 
 export function HeaderButton(props) {
     return (
