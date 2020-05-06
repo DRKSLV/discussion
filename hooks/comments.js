@@ -19,9 +19,12 @@ export function useCommentIds(load, entityId) {
 }
 
 export function useComments(ids) {
-    var [commentArray, setCommentArray] = useState([]);
+    var [commentArray, setCommentArray] = useState(["not epic"]);
 
     useEffect(() => {
+        if(!ids[0]) 
+            return;
+
         var promises = ids.map((id) => {
             //FEtch
             return Axios.get(apiUrl+"/comment/"+id)
@@ -30,7 +33,7 @@ export function useComments(ids) {
         .then((e) => {
             setCommentArray(e.map((res)=>res.data).filter((lol) => lol.level>0));
         })
-        .catch();      
+        .catch();    
     }, [ids]) 
 
     return commentArray

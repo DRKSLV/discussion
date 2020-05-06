@@ -35,7 +35,7 @@ export function Post(props) {
                     <Timestamp time={p.createdAt} edit={p.updatedAt}></Timestamp>
                 </div>
             </div>
-            <CommentSection id={p.entity.id} open={commentsOpen}/>
+            <CommentSection id={p.entity.id} open={commentsOpen} key={"cs"+p.entity.id}/>
         </>
     );
 }

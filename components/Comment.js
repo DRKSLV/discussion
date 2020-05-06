@@ -9,7 +9,7 @@ export function Comment(props) {
 
     var indents = [];
     for(let i=0; i<c.level; i++) {
-        indents.push(<Threadindent/>)
+        indents.push(<Threadindent key={i}/>)
     }
 
 

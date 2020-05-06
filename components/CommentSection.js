@@ -8,8 +8,12 @@ export function CommentSection(props) {
     var comIds = useCommentIds(props.open, props.id);
     var comments = useComments(comIds);
 
+    console.log(comments)
     var comObjects = comments.map((comment) => {
-        return (<Comment key={comment.entity.id} comment={comment}/>)
+        if(comment === "not epic") {
+            return [];
+        }
+        return (<Comment key={comment.entityId} comment={comment}/>)
     });
 
     return (
@@ -17,7 +21,11 @@ export function CommentSection(props) {
         {
             props.open && 
             <div className={s.commentSection}>
-                {comObjects[0] ? comObjects : "There are no Comments"} 
+                {comments[0] !== "not epic" ?
+                (comments[0] ? 
+                comObjects
+                : "There are no Comments")
+                : "Loading..."} 
             </div>
         }
         </>
