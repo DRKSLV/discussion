@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy onto production branch\" && git subtree push --prefix out origin production"
   },
   "dependencies": {
     "axios": "^0.19.2",
