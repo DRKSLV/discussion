@@ -26,7 +26,7 @@ export function CommentSection(props) {
         return (<Comment key={comment.entityId} comment={comment}/>)
     });
     //no comments :(
-    if (comments[0] === "not epic") {
+    if (!comments[0]) {
         animKey = "no";
         comObjects = [<p>There are no Comments</p>];
     }
@@ -42,11 +42,10 @@ export function CommentSection(props) {
             <CSSTransition 
                 timeout={300} 
                 classNames={{ ...s }} 
-                className={s.commentSection} 
                 component="div"
                 key={animKey}
             >     
-                <div>{comObjects}</div>
+                {props.open? <div className={s.commentSection}>{comObjects}</div> : <></>}
             </CSSTransition>
         </SwitchTransition>
     );
