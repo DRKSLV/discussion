@@ -1,33 +1,53 @@
 import { useCommentIds, useComments } from "../hooks/comments";
 import { Comment } from "./Comment";
 
-import s from "../style/post.module.sass";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
+
+import s from "../style/commentSection.module.sass";
 
 export function CommentSection(props) {
+    console.log("ehrenlos");
+
     //load comments
     var comIds = useCommentIds(props.open, props.id);
     var comments = useComments(comIds);
 
-    console.log(comments)
+    //required by css switch transition
+    var animKey = undefined;
+
     var comObjects = comments.map((comment) => {
+        //comments not yet loaded
         if(comment === "not epic") {
-            return [];
-        }
+            animKey="wait";
+            return <p>Loading...</p>;
+        } 
+        //COMMENTS!
+        animKey="cs";
         return (<Comment key={comment.entityId} comment={comment}/>)
     });
+    //no comments :(
+    if (comments[0] === "not epic") {
+        animKey = "no";
+        comObjects = [<p>There are no Comments</p>];
+    }
+    if(!props.open) {
+        animKey="hurensohn nein";
+        comObjects = [<></>];
+    }
+
+    console.log(animKey);
 
     return (
-        <>
-        {
-            props.open && 
-            <div className={s.commentSection}>
-                {comments[0] !== "not epic" ?
-                (comments[0] ? 
-                comObjects
-                : "There are no Comments")
-                : "Loading..."} 
-            </div>
-        }
-        </>
+        <SwitchTransition mode={"out-in"}>
+            <CSSTransition 
+                timeout={300} 
+                classNames={{ ...s }} 
+                className={s.commentSection} 
+                component="div"
+                key={animKey}
+            >     
+                <div>{comObjects}</div>
+            </CSSTransition>
+        </SwitchTransition>
     );
 }
