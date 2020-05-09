@@ -450,7 +450,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-lo
 exports = ___CSS_LOADER_API_IMPORT___(true);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap);"]);
 // Module
-exports.push([module.i, ":root {\n  font-family: \"Noto Sans TC\", sans-serif;\n}\n\nbody {\n  font-family: \"Noto Sans TC\", sans-serif;\n  margin: 0px;\n}", "",{"version":3,"sources":["global.sass"],"names":[],"mappings":"AAEA;EACI,uCAAA;AAAJ;;AAEA;EACI,uCAAA;EACA,WAAA;AACJ","file":"global.sass","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap')\r\n    \r\n:root\r\n    font-family: 'Noto Sans TC', sans-serif\r\n\r\nbody \r\n    font-family: 'Noto Sans TC', sans-serif\r\n    margin: 0px"]}]);
+exports.push([module.i, ":root {\n  font-family: \"Noto Sans TC\", sans-serif;\n}\n\nbody {\n  font-family: \"Noto Sans TC\", sans-serif;\n  margin: 0px;\n}\n\na, a:visited, a:hover {\n  color: inherit;\n}", "",{"version":3,"sources":["global.sass"],"names":[],"mappings":"AAEA;EACI,uCAAA;AAAJ;;AAEA;EACI,uCAAA;EACA,WAAA;AACJ;;AACA;EACI,cAAA;AAEJ","file":"global.sass","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap')\r\n    \r\n:root\r\n    font-family: 'Noto Sans TC', sans-serif\r\n\r\nbody \r\n    font-family: 'Noto Sans TC', sans-serif\r\n    margin: 0px\r\n\r\na, a:visited, a:hover \r\n    color: inherit"]}]);
 // Exports
 module.exports = exports;
 
