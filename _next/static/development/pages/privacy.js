@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\markdown.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\privacy.js"],{
 
 /***/ "./components/layout/Container.js":
 /*!****************************************!*\
@@ -55,10 +55,7 @@ var _jsxFileName = "C:\\Users\\kongr\\Documents\\ProjectHome\\node\\drkslv\\comp
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-marked__WEBPACK_IMPORTED_MODULE_3___default.a.Lexer.rules.spoiler = /^\?([^\s][\s\S]*?[^\s])\?(?!\?)/;
-console.log(marked__WEBPACK_IMPORTED_MODULE_3___default.a.Lexer.rules.inline); // all inline level rules
-// Override function
+ // Override function
 
 var renderer = {
   heading: function heading(text, level) {
@@ -82,7 +79,7 @@ function Document(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 31,
       columnNumber: 9
     }
   });
@@ -12056,23 +12053,23 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmarkdown&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cmarkdown.js&hotRouterUpdates=true!./":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmarkdown&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cmarkdown.js&hotRouterUpdates=true ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprivacy&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cprivacy.js&hotRouterUpdates=true!./":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprivacy&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cprivacy.js&hotRouterUpdates=true ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
     (window.__NEXT_P = window.__NEXT_P || []).push([
-      "/markdown",
+      "/privacy",
       function () {
-        var mod = __webpack_require__(/*! ./pages/markdown.js */ "./pages/markdown.js");
+        var mod = __webpack_require__(/*! ./pages/privacy.js */ "./pages/privacy.js");
         if (true) {
-          module.hot.accept(/*! ./pages/markdown.js */ "./pages/markdown.js", function () {
-            if (!next.router.components["/markdown"]) return;
-            var updatedPage = __webpack_require__(/*! ./pages/markdown.js */ "./pages/markdown.js");
-            next.router.update("/markdown", updatedPage);
+          module.hot.accept(/*! ./pages/privacy.js */ "./pages/privacy.js", function () {
+            if (!next.router.components["/privacy"]) return;
+            var updatedPage = __webpack_require__(/*! ./pages/privacy.js */ "./pages/privacy.js");
+            next.router.update("/privacy", updatedPage);
           });
         }
         return mod;
@@ -13665,16 +13662,16 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./res/example.md":
+/***/ "./node_modules/raw-loader/dist/cjs.js!./res/privacy.md":
 /*!**************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./res/example.md ***!
+  !*** ./node_modules/raw-loader/dist/cjs.js!./res/privacy.md ***!
   \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("---\r\n__Advertisement :)__\r\n\r\n- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image\r\n  resize in browser.\r\n- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly\r\n  i18n with plurals support and easy syntax.\r\n\r\nYou will like those projects!\r\n\r\n---\r\n\r\n# h1 Heading 8-)\r\n## h2 Heading\r\n### h3 Heading\r\n#### h4 Heading\r\n##### h5 Heading\r\n###### h6 Heading\r\n\r\n\r\n## Horizontal Rules\r\n\r\n___\r\n\r\n---\r\n\r\n***\r\n\r\n\r\n## Typographic replacements\r\n\r\nEnable typographer option to see result.\r\n\r\n(c) (C) (r) (R) (tm) (TM) (p) (P) +-\r\n\r\ntest.. test... test..... test?..... test!....\r\n\r\n!!!!!! ???? ,,  -- ---\r\n\r\n\"Smartypants, double quotes\" and 'single quotes'\r\n\r\n\r\n## Emphasis\r\n\r\n**This is bold text**\r\n\r\n__This is bold text__\r\n\r\n*This is italic text*\r\n\r\n_This is italic text_\r\n\r\n~~Strikethrough~~\r\n\r\n\r\n## Blockquotes\r\n\r\n\r\n> Blockquotes can also be nested...\r\n>> ...by using additional greater-than signs right next to each other...\r\n> > > ...or with spaces between arrows.\r\n\r\n\r\n## Lists\r\n\r\nUnordered\r\n\r\n+ Create a list by starting a line with `+`, `-`, or `*`\r\n+ Sub-lists are made by indenting 2 spaces:\r\n  - Marker character change forces new list start:\r\n    * Ac tristique libero volutpat at\r\n    + Facilisis in pretium nisl aliquet\r\n    - Nulla volutpat aliquam velit\r\n+ Very easy!\r\n\r\nOrdered\r\n\r\n1. Lorem ipsum dolor sit amet\r\n2. Consectetur adipiscing elit\r\n3. Integer molestie lorem at massa\r\n\r\n\r\n1. You can use sequential numbers...\r\n1. ...or keep all the numbers as `1.`\r\n\r\nStart numbering with offset:\r\n\r\n57. foo\r\n1. bar\r\n\r\n\r\n## Code\r\n\r\nInline `code`\r\n\r\nIndented code\r\n\r\n    // Some comments\r\n    line 1 of code\r\n    line 2 of code\r\n    line 3 of code\r\n\r\n\r\nBlock code \"fences\"\r\n\r\n```\r\nSample text here...\r\n```\r\n\r\nSyntax highlighting\r\n\r\n``` js\r\nvar foo = function (bar) {\r\n  return bar++;\r\n};\r\n\r\nconsole.log(foo(5));\r\n```\r\n\r\n## Tables\r\n\r\n| Option | Description |\r\n| ------ | ----------- |\r\n| data   | path to data files to supply the data that will be passed into templates. |\r\n| engine | engine to be used for processing templates. Handlebars is the default. |\r\n| ext    | extension to be used for dest files. |\r\n\r\nRight aligned columns\r\n\r\n| Option | Description |\r\n| ------:| -----------:|\r\n| data   | path to data files to supply the data that will be passed into templates. |\r\n| engine | engine to be used for processing templates. Handlebars is the default. |\r\n| ext    | extension to be used for dest files. |\r\n\r\n\r\n## Links\r\n\r\n[link text](http://dev.nodeca.com)\r\n\r\n[link with title](http://nodeca.github.io/pica/demo/ \"title text!\")\r\n\r\nAutoconverted link https://github.com/nodeca/pica (enable linkify to see)\r\n\r\n\r\n## Images\r\n\r\n![Minion](https://octodex.github.com/images/minion.png)\r\n![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg \"The Stormtroopocat\")\r\n\r\nLike links, Images also have a footnote style syntax\r\n\r\n![Alt text][id]\r\n\r\nWith a reference later in the document defining the URL location:\r\n\r\n[id]: https://octodex.github.com/images/dojocat.jpg  \"The Dojocat\"\r\n\r\n\r\n## Plugins\r\n\r\nThe killer feature of `markdown-it` is very effective support of\r\n[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).\r\n\r\n\r\n### [Emojies](https://github.com/markdown-it/markdown-it-emoji)\r\n\r\n> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:\r\n>\r\n> Shortcuts (emoticons): :-) :-( 8-) ;)\r\n\r\nsee [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.\r\n\r\n\r\n### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)\r\n\r\n- 19^th^\r\n- H~2~O\r\n\r\n\r\n### [\\<ins>](https://github.com/markdown-it/markdown-it-ins)\r\n\r\n++Inserted text++\r\n\r\n\r\n### [\\<mark>](https://github.com/markdown-it/markdown-it-mark)\r\n\r\n==Marked text==\r\n\r\n\r\n### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)\r\n\r\nFootnote 1 link[^first].\r\n\r\nFootnote 2 link[^second].\r\n\r\nInline footnote^[Text of inline footnote] definition.\r\n\r\nDuplicated footnote reference[^second].\r\n\r\n[^first]: Footnote **can have markup**\r\n\r\n    and multiple paragraphs.\r\n\r\n[^second]: Footnote text.\r\n\r\n\r\n### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)\r\n\r\nTerm 1\r\n\r\n:   Definition 1\r\nwith lazy continuation.\r\n\r\nTerm 2 with *inline markup*\r\n\r\n:   Definition 2\r\n\r\n        { some code, part of Definition 2 }\r\n\r\n    Third paragraph of definition 2.\r\n\r\n_Compact style:_\r\n\r\nTerm 1\r\n  ~ Definition 1\r\n\r\nTerm 2\r\n  ~ Definition 2a\r\n  ~ Definition 2b\r\n\r\n\r\n### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)\r\n\r\nThis is HTML abbreviation example.\r\n\r\nIt converts \"HTML\", but keep intact partial entries like \"xxxHTMLyyy\" and so on.\r\n\r\n*[HTML]: Hyper Text Markup Language\r\n\r\n### [Custom containers](https://github.com/markdown-it/markdown-it-container)\r\n\r\n::: triggered\r\n*here be dragons*\r\n:::\r\n\r\n::: spoiler  \r\nGAMER\r\n:::");
+/* harmony default export */ __webpack_exports__["default"] = ("# Privacy Policy\r\n\r\nDRKSLV is not a company, it’s just one Person (referred to as “me”, or “I”). \r\nThis Privacy Policy will explain how I handle the personal data I collect from you when you use this Website or after you register a User-Account with me.\r\n\r\nThis Privacy Notice applies to https://drkslv.github.io/discussion and https://drkslv.herokuapp.com.\r\nThe Github Url is the Website and the Frontend. The Heroku-Url is the Backend Application that actually stores the Data and collects Logfiles.\r\n\r\nYou can reach out to me on privacy issues at drkslv@gmx.de\r\n\r\n## What Data do I collect?\r\n\r\n#### Log-Files\r\nDRKSLV-Discussion follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (**IP**) addresses, **browser type**, Internet Service Provider (**ISP**), **date and time stamp**, referring/exit **pages**, and possibly the number of **clicks**. These are not linked to any information that is personally identifiable. \r\n\r\nThe purpose of that information is for analysing trends, administering the site, tracking the audience's movement on the website, and gathering demographic information.\r\n\r\n#### User-Account\r\nWhen you register a User-Account with me, I store:\r\n- A pseudonymous **username**\r\n- Your **email address**\r\n- whether you have **verified** your email address \r\n- whether you have been granted **Moderator-Rights**\r\n- your **password** in encrypted form (bcrypt hashing algorithm)\r\n- date and time of **creation**\r\n- date and time of **last edit**\r\n\r\nOnly your Username, Moderator-Rights and the Date of Creation will be shown publicly.  \r\n\r\nThis Information is used to provide a public identity to the people using my site. \r\nYour email address and Password are used to prove your identity.\r\n\r\n**I reserve my right to terminate your User-Account at any Time, for any Reason.**\r\n\r\n#### Posts, Comments and Votes\r\nYou can *voluntarily* choose to participate in discussion on my platform.\r\nThis means creating **Posts**, **Comments** and **Voting** on other users' contributions.\r\n\r\nYour Posts and Comments store their Creation and Edit **timestamps**, as well as their **author** (which associates them with your account) \r\nPosts have a **title** and a **text body**, Comments only have the **text**.\r\nComments store their position in the **comment hierarchy** and which post they belong to.\r\n\r\nYou can edit and correct the text body of posts and comments.\r\n\r\nWhen you delete a post or comment, it is de-associated with your account and the text-body will be deleted. \r\nHowever, post titles and comment hierarchies will be persisted to provide context to other users contributions that were replying to your post or comment.\r\n\r\nBecause titles are persisted, please don’t use them to convey sensitive personal data!\r\n\r\nVotes store the date and time you voted, the content you were voting on, and are associated with your account. You can withdraw a vote at any time, and when you delete your account all your votes will be lost as well.\r\n\r\n## What Data do I collect?\r\nI collect:\r\n- **Log Files** -- when you visit my website or access features of the underlying application.\r\n- **User-Account Information** -- when you choose to register an account with me.\r\n- **Post, Comment or Vote Information** -- whenever you voluntarily choose to create them.\r\n\r\n## How will I use your Data?\r\nI collect your data so I can:\r\n\r\n- *Analyse* traffic and use of my website and application (I don't rlly bother tho)\r\n- *Manage* your account and provide a virtual Identity for you\r\n- *Create* a space were people can share content and vote on or reply to it\r\n- *Email* you critical notices via email (will never happen prlly)\r\n\r\n## How do I store your data?\r\nI store your data on a free instance of heroku-postgres. \r\nYour User-Account's password is encrypted securely using the bcrypt hashing algorithm.\r\nThe Database is locked with an username and password based authentication system. Username and Password were chosen entirely randomly and are of sufficient length to prevent brute-force attacks.\r\n\r\nI keep your **User Information, Posts, Comments and Votes** *for as long as you desire*.\r\n\r\nI keep **log files** *indefinitely*.\r\n(I actually don't know how long they are kept, but I don't care, so I just reserve my right to hold onto them, since they do not contain sensitive data)\r\n\r\n## Marketing (none)\r\nYour Information is not shared with any third-parties. \r\n\r\nI do not run ads or track unauthenticated users on the Website.\r\n\r\nSo there is basically no Marketing going on here.\r\n\r\n## What are your data protection rights?\r\nI would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:\r\n\r\n- **The right to access** – You have the right to request copies of your personal data. \r\n- **The right to rectification** – You have the right to request that I correct any information you believe is inaccurate. You also have the right to request Our Company to complete the information you believe is incomplete.\r\n(You can just edit your user-account info, you do not have the right to rectify other peoples posts etc.)\r\n- **The right to erasure** – You have the right to request that I erase your personal data, under certain conditions.\r\n- **The right to restrict processing** – You have the right to request that I restrict the processing of your personal data, under certain conditions.\r\n- **The right to object to processing** – You have the right to object to my processing of your personal data, under certain conditions.\r\n- **The right to data portability** – You have the right to request that I transfer the data that i have collected to another organization, or directly to you, under certain conditions.\r\n\r\nIf you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email: konrad.gruber@protonmail.ch\r\n\r\n## Cookies and Local Storage\r\nI don’t use cookies atm. \r\nBut your access-token , that is used to recognize you as a logged-in User, will be saved to your browsers localStorage, which is kinda similar.\r\n\r\n#### Types of Cookies/Storage I use\r\n- **Functional** – these cookies/storage are used to provide opt-in features such as staying logged-in\r\n\r\n#### How to manage Cookies/Storage\r\nYou can turn of Cookies in your Browser. Local Storage cannot be turned off. Disabling JavaScript in your Browser will stop me from accessing it.\r\nIf you turn of JavaScript, Website Functionality will be guarranteed to break.\r\n\r\n## Privacy of external Sites\r\nMy Website contains links to other websites. Our privacy policy applies only to our website, so if you click on a link to another website, you should read their privacy policy. \r\n\r\n## Changes to my privacy policy\r\nI keep my privacy policy under regular review and place any updates on this web page. This privacy policy was last updated on 10th May 2020. \r\n\r\n## Contacting appropriate authorities\r\nIf you feel I violate the GDPR you can report that to a EU Authority. \r\n\r\nHowever I don’t know how to contact them and I’m fucking tired of this shit so please do your research yourself.\r\nAlso contact me using the Email in [Section 1](#privacy-policy) first if you believe I can easily resolve the issue.\r\n\r\nPls don't get me in jail I’m a god damn 17 year old.\r\n\r\n");
 
 /***/ }),
 
@@ -29380,10 +29377,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/markdown.js":
-/*!***************************!*\
-  !*** ./pages/markdown.js ***!
-  \***************************/
+/***/ "./pages/privacy.js":
+/*!**************************!*\
+  !*** ./pages/privacy.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29397,8 +29394,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout/Header */ "./components/layout/Header.js");
 /* harmony import */ var _components_layout_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout/Container */ "./components/layout/Container.js");
 /* harmony import */ var _components_layout_DocumentMarked__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layout/DocumentMarked */ "./components/layout/DocumentMarked.js");
-/* harmony import */ var _raw_loader_res_example_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! raw-loader!../res/example.md */ "./node_modules/raw-loader/dist/cjs.js!./res/example.md");
-var _jsxFileName = "C:\\Users\\kongr\\Documents\\ProjectHome\\node\\drkslv\\pages\\markdown.js";
+/* harmony import */ var _raw_loader_res_privacy_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! raw-loader!../res/privacy.md */ "./node_modules/raw-loader/dist/cjs.js!./res/privacy.md");
+var _jsxFileName = "C:\\Users\\kongr\\Documents\\ProjectHome\\node\\drkslv\\pages\\privacy.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -29428,7 +29425,7 @@ function Home() {
       lineNumber: 14,
       columnNumber: 17
     }
-  }, "Markdown Example")), __jsx(_components_layout_Header__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+  }, "Privacy Policy")), __jsx(_components_layout_Header__WEBPACK_IMPORTED_MODULE_2__["Header"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -29449,7 +29446,7 @@ function Home() {
       lineNumber: 20,
       columnNumber: 17
     }
-  }, _raw_loader_res_example_md__WEBPACK_IMPORTED_MODULE_5__["default"])));
+  }, _raw_loader_res_privacy_md__WEBPACK_IMPORTED_MODULE_5__["default"])));
 }
 
 /***/ }),
@@ -30091,13 +30088,13 @@ module.exports = content.locals || {};
 /***/ }),
 
 /***/ 2:
-/*!***********************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fmarkdown&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cmarkdown.js&hotRouterUpdates=true ***!
-  \***********************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fprivacy&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cprivacy.js&hotRouterUpdates=true ***!
+  \*********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fmarkdown&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cmarkdown.js&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmarkdown&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cmarkdown.js&hotRouterUpdates=true!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fprivacy&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cprivacy.js&hotRouterUpdates=true! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fprivacy&absolutePagePath=C%3A%5CUsers%5Ckongr%5CDocuments%5CProjectHome%5Cnode%5Cdrkslv%5Cpages%5Cprivacy.js&hotRouterUpdates=true!./");
 
 
 /***/ }),
@@ -30114,4 +30111,4 @@ module.exports = dll_2adc2403d89adc16ead0;
 /***/ })
 
 },[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=markdown.js.map
+//# sourceMappingURL=privacy.js.map
