@@ -1,5 +1,27 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
 
+/***/ "./helpers/uniqueId.js":
+/*!*****************************!*\
+  !*** ./helpers/uniqueId.js ***!
+  \*****************************/
+/*! exports provided: default, resetIdCounter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return generateId; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetIdCounter", function() { return resetIdCounter; });
+// utility to generate ids
+var current = 0;
+function generateId(prefix) {
+  return "".concat(prefix || 'id', "-").concat(current++);
+}
+function resetIdCounter() {
+  current = 0;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
@@ -450,7 +472,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-lo
 exports = ___CSS_LOADER_API_IMPORT___(true);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap);"]);
 // Module
-exports.push([module.i, ":root {\n  font-family: \"Noto Sans TC\", sans-serif;\n}\n\nbody {\n  font-family: \"Noto Sans TC\", sans-serif;\n  margin: 0px;\n  overflow-y: scroll;\n  background-color: #181a1b;\n  color: white;\n}\n\na, a:visited, a:hover {\n  color: inherit;\n}", "",{"version":3,"sources":["global.sass"],"names":[],"mappings":"AAEA;EACI,uCAAA;AAAJ;;AAEA;EACI,uCAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,YAAA;AACJ;;AACA;EACI,cAAA;AAEJ","file":"global.sass","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap')\r\n    \r\n:root\r\n    font-family: 'Noto Sans TC', sans-serif\r\n\r\nbody \r\n    font-family: 'Noto Sans TC', sans-serif\r\n    margin: 0px\r\n    overflow-y: scroll\r\n    background-color: #181a1b\r\n    color: white\r\n\r\na, a:visited, a:hover \r\n    color: inherit"]}]);
+exports.push([module.i, ":root {\n  font-family: \"Noto Sans TC\", sans-serif;\n}\n\nbody {\n  font-family: \"Noto Sans TC\", sans-serif;\n  margin: 0px;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  background-color: #181a1b;\n  color: white;\n}\n\na, a:visited, a:hover {\n  color: inherit;\n}", "",{"version":3,"sources":["global.sass"],"names":[],"mappings":"AAEA;EACI,uCAAA;AAAJ;;AAEA;EACI,uCAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;EACA,yBAAA;EACA,YAAA;AACJ;;AACA;EACI,cAAA;AAEJ","file":"global.sass","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap')\r\n    \r\n:root\r\n    font-family: 'Noto Sans TC', sans-serif\r\n\r\nbody \r\n    font-family: 'Noto Sans TC', sans-serif\r\n    margin: 0px\r\n    overflow-y: scroll\r\n    overflow-x: hidden\r\n    background-color: #181a1b\r\n    color: white\r\n\r\na, a:visited, a:hover \r\n    color: inherit"]}]);
 // Exports
 module.exports = exports;
 
@@ -3731,6 +3753,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _style_global_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/global.sass */ "./style/global.sass");
 /* harmony import */ var _style_global_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_global_sass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _helpers_uniqueId__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../helpers/uniqueId */ "./helpers/uniqueId.js");
 
 var _jsxFileName = "C:\\Users\\kongr\\Documents\\ProjectHome\\node\\drkslv\\pages\\_app.js";
 
@@ -3738,9 +3761,15 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 function MyApp(_ref) {
   var Component = _ref.Component,
       pageProps = _ref.pageProps;
+
+  if (typeof document === "undefined") {
+    Object(_helpers_uniqueId__WEBPACK_IMPORTED_MODULE_4__["resetIdCounter"])();
+  }
+
   var ie = false;
 
   if (true) {
@@ -3751,14 +3780,14 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 16,
       columnNumber: 9
     }
   })) : __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 18,
       columnNumber: 9
     }
   }, __jsx("img", {
@@ -3766,7 +3795,7 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 19,
       columnNumber: 13
     }
   }), __jsx("p", {
@@ -3776,42 +3805,42 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 20,
       columnNumber: 13
     }
   }, "GOOD MORNING INSPECTOR."), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 21,
       columnNumber: 13
     }
   }, "We've been noticing your very unorthodox Choice of Browsers"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 22,
       columnNumber: 13
     }
   }, "You have choosen to use ", __jsx("b", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 22,
       columnNumber: 40
     }
   }, "INTERNET EXPLORER")), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 23,
       columnNumber: 13
     }
   }, "We consider this Choice HIGH TREASON"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 24,
       columnNumber: 13
     }
   }, "You will be gulaged by tomorrow morning"), __jsx("p", {
@@ -3822,14 +3851,14 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 25,
       columnNumber: 13
     }
   }, __jsx("b", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 25,
       columnNumber: 60
     }
   }, "GLORY TO ARSTOTZKA.")));
