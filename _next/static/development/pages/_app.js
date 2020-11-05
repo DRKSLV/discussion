@@ -543,8 +543,9 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap);"]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap);"]);
 // Module
-exports.push([module.i, ":root {\n  font-family: \"Noto Sans TC\", sans-serif;\n  scrollbar-color: #535353 #181a1b;\n  scrollbar-width: auto;\n}\n\nbody {\n  font-family: \"Noto Sans TC\", sans-serif;\n  margin: 0px;\n  overflow-x: hidden;\n  color: white;\n}\n\na, a:visited, a:hover {\n  color: inherit;\n}", "",{"version":3,"sources":["global.sass"],"names":[],"mappings":"AAEA;EACI,uCAAA;EACA,gCAAA;EACA,qBAAA;AAAJ;;AAEA;EACI,uCAAA;EACA,WAAA;EACA,kBAAA;EACA,YAAA;AACJ;;AAEA;EACI,cAAA;AACJ","file":"global.sass","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap')\r\n    \r\n:root\r\n    font-family: 'Noto Sans TC', sans-serif\r\n    scrollbar-color: #535353 #181a1b\r\n    scrollbar-width: auto\r\n\r\nbody \r\n    font-family: 'Noto Sans TC', sans-serif\r\n    margin: 0px\r\n    overflow-x: hidden\r\n    color: white\r\n    \r\n\r\na, a:visited, a:hover \r\n    color: inherit"]}]);
+exports.push([module.i, ":root {\n  font-family: \"Noto Sans TC\", sans-serif;\n  scrollbar-color: #535353 #181a1b;\n  scrollbar-width: auto;\n}\n\nbody {\n  font-family: \"Noto Sans TC\", sans-serif;\n  margin: 0px;\n  overflow-x: hidden;\n  color: white;\n}\n\na, a:visited, a:hover {\n  color: inherit;\n}", "",{"version":3,"sources":["global.sass"],"names":[],"mappings":"AAGA;EACI,uCAAA;EACA,gCAAA;EACA,qBAAA;AAAJ;;AAEA;EACI,uCAAA;EACA,WAAA;EACA,kBAAA;EACA,YAAA;AACJ;;AAEA;EACI,cAAA;AACJ","file":"global.sass","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap')\r\n@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap')\r\n    \r\n:root\r\n    font-family: 'Noto Sans TC', sans-serif\r\n    scrollbar-color: #535353 #181a1b\r\n    scrollbar-width: auto\r\n\r\nbody \r\n    font-family: 'Noto Sans TC', sans-serif\r\n    margin: 0px\r\n    overflow-x: hidden\r\n    color: white\r\n    \r\n\r\na, a:visited, a:hover \r\n    color: inherit"]}]);
 // Exports
 module.exports = exports;
 
@@ -4262,11 +4263,15 @@ function MyApp(_ref) {
     ie = msieversion() !== 0;
   }
 
+  if (!ie && typeof navigator !== "undefined") {
+    if ("serviceWorker" in navigator) {}
+  }
+
   return !ie ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 29,
       columnNumber: 9
     }
   }, router.pathname.split("/")[1] === "embed" && __jsx("style", {
@@ -4274,21 +4279,21 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 30,
       columnNumber: 59
     }
   }, "\n                body{ background-color: transparent !important;}\n            ")), __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 35,
       columnNumber: 9
     }
   }))) : __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, __jsx("img", {
@@ -4296,7 +4301,7 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 39,
       columnNumber: 13
     }
   }), __jsx("p", {
@@ -4306,42 +4311,42 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 40,
       columnNumber: 13
     }
   }, "GOOD MORNING INSPECTOR."), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 41,
       columnNumber: 13
     }
   }, "We've been noticing your very unorthodox Choice of Browsers"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 42,
       columnNumber: 13
     }
   }, "You have choosen to use ", __jsx("b", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 42,
       columnNumber: 40
     }
   }, "INTERNET EXPLORER")), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 43,
       columnNumber: 13
     }
   }, "We consider this Choice HIGH TREASON"), __jsx("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 44,
       columnNumber: 13
     }
   }, "You will be gulaged by tomorrow morning"), __jsx("p", {
@@ -4352,14 +4357,14 @@ function MyApp(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 45,
       columnNumber: 13
     }
   }, __jsx("b", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 45,
       columnNumber: 60
     }
   }, "GLORY TO ARSTOTZKA.")));
